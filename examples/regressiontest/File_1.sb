@@ -1,0 +1,91 @@
+TextWindow.WriteLine("WriteContents/ReadContents")
+a = File.WriteContents("555.txt", "abcd")
+b = File.ReadContents("555.txt")
+c = File.WriteContents("555.txt", "\r\nabcd")
+d = File.ReadContents("555.txt")
+
+'@assert a = "SUCCESS"
+'@assert b = "abcd"
+'@assert c = "SUCCESS"
+'@assert d = "\r\nabcd"
+
+TextWindow.WriteLine(a)
+TextWindow.WriteLine("FileContents : "+ b)
+' escape sequence 
+TextWindow.WriteLine(c) 
+TextWindow.WriteLine("FileContents : "+ d)
+
+'writeline 사용 시 아래에 빈줄 생성
+'파일이 존재하지않을 경우 라인에 관계없이 첫줄에 파일내용 생성
+'총 n라인 중 n+1을 초과한 인수를 줄 경우 n+1라인에 내용 삽입
+TextWindow.WriteLine("")
+TextWindow.WriteLine("WriteLine")
+e = File.WriteLine("555.txt", 2, "two")
+f = File.WriteLine("555.txt", 1, "one")
+g = File.WriteLine("555.txt", 5, "five")
+h = File.ReadContents("555.txt")
+
+'@assert e = "SUCCESS"
+'@assert f = "SUCCESS"
+'@assert g = "SUCCESS"
+'@assert
+
+TextWindow.WriteLine(e)
+TextWindow.WriteLine(f)
+TextWindow.WriteLine(g)
+TextWindow.WriteLine("FileContents : "+ h)
+
+'readline 사용 시 line 0과 1의 내용이 같음
+TextWindow.WriteLine("")
+TextWindow.WriteLine("ReadLine")
+i = File.ReadLine("555.txt", -1)
+j = File.ReadLine("555.txt", 0)
+k = File.ReadLine("555.txt", 1)
+l = File.ReadLine("555.txt", 2)
+
+'@assert i = ""
+'@assert j = "one"
+'@assert k = "one"
+'@assert l = "two"
+
+TextWindow.WriteLine(i)
+TextWindow.WriteLine(j)
+TextWindow.WriteLine(k)
+TextWindow.WriteLine(l)
+
+'InsertLine 사용 시 아래에 빈줄 생성
+'파일이 존재하지않을 경우 라인에 관계없이 첫줄에 파일내용 생성
+'총 n라인 중 n+1을 초과한 인수를 줄 경우 n+1라인에 내용 삽입
+TextWindow.WriteLine("")
+TextWindow.WriteLine("InsertLine")
+m = File.InsertLine("test1.txt", 0, "test1")
+n = File.ReadContents("test1.txt")
+o = File.InsertLine("test1.txt", 3, "test3")
+p = File.ReadContents("test1.txt")
+
+'@assert m = "SUCCESS"
+'@assert
+'@assert o = "SUCCESS"
+'@assert
+
+TextWindow.WriteLine(m)
+TextWindow.WriteLine("FileContents : "+ n)
+TextWindow.WriteLine(o)
+TextWindow.WriteLine("FileContents : "+ p)
+File.WriteContents("test1.txt", "")
+
+'AppendContents 사용 시 아래에 빈줄 생성
+'파일이 존재하지않을 경우 라인에 관계없이 첫줄에 파일내용 생성
+'커서의 위치에 영향을 받음
+TextWindow.WriteLine("")
+TextWindow.WriteLine("AppendContents")
+q = File.AppendContents("555.txt", "three")
+r = File.ReadContents("555.txt")
+
+'@assert q = "SUCCESS"
+'@assert
+
+TextWindow.WriteLine(q)
+TextWindow.WriteLine("FileContents : "+ r)
+File.DeleteFile("555.txt")
+File.DeleteFile("test1.txt")

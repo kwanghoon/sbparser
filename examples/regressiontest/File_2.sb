@@ -1,0 +1,84 @@
+'파일존재하지않으면 실패
+'같은 이름의 디렉토리가 있으면 성공인데 파일은 생성 안됨
+TextWindow.WriteLine("CopyFile")
+File.WriteContents("555.txt", "abcd")
+a = File.CopyFile("555.txt", ".\dir\444.txt")
+
+'@assert a = "SUCCESS"
+
+TextWindow.WriteLine(a)
+
+'디렉토리삭제시 실패
+'없는파일삭제시 성공
+TextWindow.WriteLine("")
+TextWindow.WriteLine("DeleteFile")
+b = File.DeleteFile(".\dir\444.txt")
+c = File.DeleteFile(".\dir\222.txt")
+
+'@assert b = "SUCCESS"
+'@assert c = "SUCCESS"
+
+TextWindow.WriteLine(b)
+TextWindow.WriteLine(c)
+
+'하위경로까지 생성
+'같은 이름있으면 실패
+TextWindow.WriteLine("")
+TextWindow.WriteLine("CreateDirectory")
+d = File.CreateDirectory(".\dir\444\333")
+e = File.CreateDirectory(".\dir\4441.txt")
+
+'@assert d = "SUCCESS"
+'@assert e = "SUCCESS"
+
+TextWindow.WriteLine(d)
+TextWindow.WriteLine(e)
+
+'파일삭제시 실패
+TextWindow.WriteLine("")
+TextWindow.WriteLine("DeleteDirectory")
+f = File.DeleteDirectory(".\dir\4441.txt")
+g = File.DeleteDirectory(".\dir\11.txt")
+
+'@assert f = "SUCCESS"
+'@assert g = "FAILED"
+
+TextWindow.WriteLine(f)
+TextWindow.WriteLine(g)
+
+'지정한 경로가 존재하지않으면 실패
+'지정한 경로가 존재하나 그 폴더안에 파일이 존재하지않으면 ""
+'새로붙는 경로는 \\
+'기존에 있던 경로는 기존 디렉토리 참고 \는 \\로 반환, /는 /로 반환
+TextWindow.WriteLine("")
+TextWindow.WriteLine("GetFiles")
+File.WriteContents(".\dir\333.txt", "aaa")
+h = File.GetFiles(".\dir")
+i = File.GetFiles(".\dirs")
+
+'@assert h = "1=.\\dir\\333.txt;"
+'@assert i = "FAILED"
+
+TextWindow.WriteLine(h)
+TextWindow.WriteLine(i)
+
+TextWindow.WriteLine("")
+TextWindow.WriteLine("GetDirectories")
+j = File.GetDirectories(".\dir\444")
+k = File.GetDirectories(".\dir\333")
+
+'@assert j = "1=.\\dir\\444\\333;"
+'@assert k = "FAILED"
+
+TextWindow.WriteLine(j)
+TextWindow.WriteLine(k)
+
+TextWindow.WriteLine("")
+TextWindow.WriteLine("GetTemporaryFilePath")
+l = File.GetTemporaryFilePath()
+
+'@assert
+
+TextWindow.WriteLine(l)
+File.DeleteFile("555.txt")
+File.DeleteDirectory(".\dir")
