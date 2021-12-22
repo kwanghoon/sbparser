@@ -14,11 +14,24 @@ import System.Environment (getArgs, withArgs)
 import TokenInterface
 
 import Text.Regex.TDFA
-  
+
+-- Syntax completion related
+import EmacsServer
+import SyntaxCompletion(computeCand)
+import SyntaxCompletionSpec(spec)
+
+
+-- Main
 main :: IO ()
 main = do
   args <- getArgs
-  _main args
+  putStrLn "args:"
+  mapM_ putStrLn args
+  if "test" `elem` args
+    then withArgs [] spec
+    else if "emacs" `elem` args
+      then emacsServer (computeCand False)
+      else _main args
 
 -- Todo: Can I fix to have "test" as a command in stack exec?
 

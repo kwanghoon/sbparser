@@ -2,9 +2,7 @@ module Parser where
 
 import CommonParserUtil
 import Token
-
-data Expr = NoExpr
-  deriving Show
+import Expr
 
 noAction rhs = NoExpr
 
