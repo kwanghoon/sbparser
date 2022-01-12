@@ -26,33 +26,21 @@ maxLevel = 10000
 -- | computeCand
 computeCand :: Bool -> String -> String -> Bool -> IO [EmacsDataItem]
 computeCand debug programTextUptoCursor programTextAfterCursor isSimpleMode = (do
-  {- 1. Lexing  -}                                                                         
-  (line, column, terminalListUptoCursor)  <-
-    lexingWithLineColumn lexerSpec 1 1 programTextUptoCursor
-
-  {- 2. Parsing -}
-  ((do ast <- parsing debug parserSpec terminalListUptoCursor
+  {- 1. Parsing -}
+  ((do ast <- parsing debug parserSpec ((),1,1,programTextUptoCursor)
        successfullyParsed)
 
     `catch` \parseError ->
-      case parseError :: ParseError Token Expr of
+      case parseError :: ParseError Token Expr () of
         _ ->
-          {- 3. Lexing the rest and computing candidates with it -}
-          do (_, _, terminalListAfterCursor) <-
-               lexingWithLineColumn lexerSpec line column programTextAfterCursor
-             handleParseError
+          {- 2. computing candidates with it -}
+          do handleParseError
                (defaultHandleParseError {
                    debugFlag=debug,
                    searchMaxLevel=maxLevel,
                    simpleOrNested=isSimpleMode,
-                   postTerminalList=terminalListAfterCursor,
+                   postTerminalList=[],     -- terminalListAfterCursor is set to []!
                    nonterminalToStringMaybe=Nothing})
-               -- (HandleParseError {
-               --     debugFlag=debug,
-               --     searchMaxLevel=maxLevel,
-               --     simpleOrNested=isSimpleMode,
-               --     postTerminalList=terminalListAfterCursor,
-               --     nonterminalToStringMaybe=Nothing})
                parseError))
 
   `catch` \lexError ->  case lexError :: LexError of  _ -> handleLexError

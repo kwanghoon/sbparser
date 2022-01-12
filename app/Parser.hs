@@ -3,21 +3,24 @@ module Parser where
 import CommonParserUtil
 import Token
 import Expr
+import Lexer
 
 -- | Utility
 rule prodRule action              = (prodRule, action, Nothing  )
 ruleWithPrec prodRule action prec = (prodRule, action, Just prec)
 ruleWithNoAction prodRule         = (prodRule, noAction, Nothing)
 
-noAction rhs = NoExpr
+noAction rhs = return NoExpr
 
 --
-parserSpec :: ParserSpec Token Expr
+parserSpec :: ParserSpec Token Expr IO ()
 parserSpec = ParserSpec
   {
     startSymbol = "Prog'",
     
     tokenPrecAssoc = [],
+
+    chumLexerSpec  = lexerSpec,
     
     parserSpecList =
     [

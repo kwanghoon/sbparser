@@ -42,11 +42,11 @@ _main (fileName:args) =
 
 doProcess verbose fileName = do
   text <- readFile fileName
-  when (verbose) $ putStrLn "Lexing..."
-  (_,_,terminalList) <- lexingWithLineColumn lexerSpec 1 1 text
+  -- when (verbose) $ putStrLn "Lexing..."
+  -- (_,_,terminalList) <- lexingWithLineColumn lexerSpec 1 1 text
   -- when (verbose) $ mapM_ putStrLn $ map terminalToString terminalList
   when (verbose) $ putStrLn "Parsing..."
-  expr <- parsing False parserSpec terminalList
+  expr <- parsing False parserSpec ((),1,1,text)
   -- when (verbose) $ putStrLn (show expr)
   when (verbose) $ putStrLn "Done."
 
