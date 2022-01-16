@@ -46,7 +46,7 @@ doProcess verbose fileName = do
   -- (_,_,terminalList) <- lexingWithLineColumn lexerSpec 1 1 text
   -- when (verbose) $ mapM_ putStrLn $ map terminalToString terminalList
   when (verbose) $ putStrLn "Parsing..."
-  expr <- parsing False parserSpec ((),1,1,text)
+  expr <- parsing False parserSpec ((),1,1,text) (aLexer lexerSpec)
   -- when (verbose) $ putStrLn (show expr)
   when (verbose) $ putStrLn "Done."
 
