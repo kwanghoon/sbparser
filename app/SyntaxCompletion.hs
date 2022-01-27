@@ -15,6 +15,7 @@ import Token
 import SynCompInterface
 import Control.Exception
 import Data.Typeable
+import SynCompAlgorithm
 
 -- Todo: The following part should be moved to the library.
 --       Arguments: lexerSpec, parserSpec
@@ -35,7 +36,10 @@ computeCand debug programTextUptoCursor programTextAfterCursor isSimpleMode = (d
       case parseError :: ParseError Token Expr () of
         _ ->
           {- 2. computing candidates with it -}
-          do handleParseError
+          do compCandidates <- chooseCompCandidatesFn
+             
+             handleParseError
+               compCandidates
                (defaultHandleParseError {
                    debugFlag=debug,
                    searchMaxLevel=maxLevel,
