@@ -43,8 +43,7 @@ packages:
 #
 # extra-deps: []
 extra-deps:
-#- yapb-0.2.3
-- ../yapb
+- yapb-0.2.3
 
 # Override default flag values for local packages and extra-deps
 # flags: {}
