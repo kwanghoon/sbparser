@@ -5,6 +5,8 @@ For i = 1 To x Step 2
 EndFor 
 
 If x <= 789 Then
-x = 1 
+
 EndIf
+
+
 
