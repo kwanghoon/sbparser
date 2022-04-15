@@ -21,12 +21,12 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
-- yapb >= 0.2.3
+- yapb >= 0.2.4
 - regex-tdfa
 - hspec
 
 library:
-  source-dirs: src
+  source-dirs: app
 
 executables:
   sbparser-exe:
