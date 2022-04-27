@@ -15,6 +15,7 @@ spec = hspec $ do
     -- let benchmark2_sb = "If x < 10 Then\n"   -- examples/exp/benchmark2.sb
     
     let config_simple = True
+    let max_gslevel = 9
     
     let config =
           Configuration
@@ -31,31 +32,48 @@ spec = hspec $ do
     let benchmark1_sb = "./examples/exp/benchmark1.sb"
     
     it ("[Benchmark1] ") $
-      do mapM_ (item benchmark1_sb config) [1..9]  -- Max GS level (9) for Smallbasic
+      do mapM_ (itemText "If x " config) [1..max_gslevel]  -- Max GS level (9) for Smallbasic
 
     let benchmark2_sb = "./examples/exp/benchmark2.sb"
     
     it ("[Benchmark2] ") $
-      do mapM_ (item benchmark2_sb config) [1..9]  -- Max GS level (9) for Smallbasic
+      do mapM_ (item benchmark2_sb "" config) [1..max_gslevel]  -- Max GS level (9) for Smallbasic
 
     let benchmark3_sb = "./examples/exp/benchmark3.sb"
 
     it ("[Benchmark3] ") $
-      do mapM_ (item benchmark3_sb config) [1..9]  -- Max GS level (9) for Smallbasic
+      do mapM_ (item benchmark3_sb "If x " config) [1..max_gslevel]  -- Max GS level (9) for Smallbasic
 
     let benchmark4_sb = "./examples/exp/benchmark4.sb"
     
     it ("[Benchmark4] ") $
-      do mapM_ (item benchmark4_sb config) [1..9]  -- Max GS level (9) for Smallbasic
+      do mapM_ (item benchmark4_sb "If x < 10 Then\n" config) [1..max_gslevel]  -- Max GS level (9) for Smallbasic
 
-item benchmark_file init_config gslevel = 
+
+item benchmark_file text init_config gslevel = 
       do let test_config = init_config{config_GS_LEVEL=gslevel}
          putStrLn (show test_config)
          
          configMaybe <- readConfig
-         benchmark <- readFile benchmark_file
+         benchmark_prefix <- readFile benchmark_file
+         let benchmark = benchmark_prefix ++ text
+         -- putStrLn $ "[" ++ benchmark ++ "]"
          case configMaybe of
-           Just config ->
+           Just _ ->
+             do writeConfig test_config  -- set
+                results <- computeCand False benchmark "" (config_SIMPLE test_config)
+                writeConfig init_config       -- restore
+                
+           Nothing -> isJust configMaybe `shouldBe` True
+
+itemText benchmark init_config gslevel = 
+      do let test_config = init_config{config_GS_LEVEL=gslevel}
+         putStrLn (show test_config)
+         
+         configMaybe <- readConfig
+         -- putStrLn $ "[" ++ benchmark ++ "]"
+         case configMaybe of
+           Just _ ->
              do writeConfig test_config  -- set
                 results <- computeCand False benchmark "" (config_SIMPLE test_config)
                 writeConfig init_config       -- restore

@@ -242,4 +242,3 @@ Sub CheckEnd
  EndIf
 EndSub
 
-If x < 10 Then
