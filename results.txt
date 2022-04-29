@@ -14,10 +14,10 @@ Installing executable sbparser-exe in /home/choi/work/lang/haskell/syncomp/sbpar
 Registering library for sbparser-0.1.0.0..
 sbparser> test (suite: sbparser-test)
 
-Candidates:
+Candidates: bm1-1
 
 
-Candidates:
+Candidates: bm1-2
 [White Terminal .,White Terminal ID]
 [White Terminal *,White Nonterminal UnaryExpr]
 [White Terminal /,White Nonterminal UnaryExpr]
@@ -46,40 +46,7 @@ Candidates:
 ["And","..."]
 ["Or","..."]
 
-Candidates:
-[White Terminal .,White Terminal ID]
-[White Terminal [,White Nonterminal Expr,White Terminal ]]
-[White Terminal *,White Nonterminal UnaryExpr]
-[White Terminal /,White Nonterminal UnaryExpr]
-[White Terminal +,White Nonterminal MultiplicativeExpr]
-[White Terminal -,White Nonterminal MultiplicativeExpr]
-[White Terminal <,White Nonterminal AdditiveExpr]
-[White Terminal <=,White Nonterminal AdditiveExpr]
-[White Terminal >,White Nonterminal AdditiveExpr]
-[White Terminal >=,White Nonterminal AdditiveExpr]
-[White Terminal <>,White Nonterminal CompExpr]
-[White Terminal =,White Nonterminal CompExpr]
-[White Terminal And,White Nonterminal EqNeqExpr]
-[White Terminal Or,White Nonterminal AndExpr]
-[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
-
-[".","ID"]
-["[","...","]"]
-["*","..."]
-["/","..."]
-["+","..."]
-["-","..."]
-["<","..."]
-["<=","..."]
-[">","..."]
-[">=","..."]
-["<>","..."]
-["=","..."]
-["And","..."]
-["Or","..."]
-["Then","..."]
-
-Candidates:
+Candidates: bm1-3
 [White Terminal .,White Terminal ID]
 [White Terminal [,White Nonterminal Expr,White Terminal ]]
 [White Terminal *,White Nonterminal UnaryExpr]
@@ -112,7 +79,7 @@ Candidates:
 ["Or","..."]
 ["Then","..."]
 
-Candidates:
+Candidates: bm1-4
 [White Terminal .,White Terminal ID]
 [White Terminal [,White Nonterminal Expr,White Terminal ]]
 [White Terminal *,White Nonterminal UnaryExpr]
@@ -145,7 +112,7 @@ Candidates:
 ["Or","..."]
 ["Then","..."]
 
-Candidates:
+Candidates: bm1-5
 [White Terminal .,White Terminal ID]
 [White Terminal [,White Nonterminal Expr,White Terminal ]]
 [White Terminal *,White Nonterminal UnaryExpr]
@@ -178,7 +145,7 @@ Candidates:
 ["Or","..."]
 ["Then","..."]
 
-Candidates:
+Candidates: bm1-6
 [White Terminal .,White Terminal ID]
 [White Terminal [,White Nonterminal Expr,White Terminal ]]
 [White Terminal *,White Nonterminal UnaryExpr]
@@ -211,7 +178,7 @@ Candidates:
 ["Or","..."]
 ["Then","..."]
 
-Candidates:
+Candidates: bm1-7
 [White Terminal .,White Terminal ID]
 [White Terminal [,White Nonterminal Expr,White Terminal ]]
 [White Terminal *,White Nonterminal UnaryExpr]
@@ -244,7 +211,7 @@ Candidates:
 ["Or","..."]
 ["Then","..."]
 
-Candidates:
+Candidates: bm1-8
 [White Terminal .,White Terminal ID]
 [White Terminal [,White Nonterminal Expr,White Terminal ]]
 [White Terminal *,White Nonterminal UnaryExpr]
@@ -277,12 +244,45 @@ Candidates:
 ["Or","..."]
 ["Then","..."]
 
-Candidates:
+Candidates: bm1-9
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Candidates: bm2-1
 [White Terminal EndIf]
 
 ["EndIf"]
 
-Candidates:
+Candidates: bm2-2
 [White Terminal Goto,White Terminal ID]
 [White Terminal ID,White Terminal :]
 [White Terminal CR,White Nonterminal TheRest]
@@ -295,7 +295,7 @@ Candidates:
 ["CR","..."]
 ["EndIf"]
 
-Candidates:
+Candidates: bm2-3
 [White Terminal Goto,White Terminal ID]
 [White Terminal ID,White Terminal (,White Terminal )]
 [White Terminal ID,White Terminal :]
@@ -316,7 +316,7 @@ Candidates:
 ["Else","...","EndIf"]
 ["EndIf"]
 
-Candidates:
+Candidates: bm2-4
 [White Terminal Goto,White Terminal ID]
 [White Terminal ID,White Terminal (,White Terminal )]
 [White Terminal ID,White Terminal :]
@@ -343,7 +343,7 @@ Candidates:
 ["Else","...","EndIf"]
 ["EndIf"]
 
-Candidates:
+Candidates: bm2-5
 [White Terminal Goto,White Terminal ID]
 [White Terminal ID,White Terminal (,White Terminal )]
 [White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
@@ -378,45 +378,7 @@ Candidates:
 ["ElseIf","...","Then","..."]
 ["EndIf"]
 
-Candidates:
-[White Terminal Goto,White Terminal ID]
-[White Terminal ID,White Terminal (,White Terminal )]
-[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
-[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
-[White Terminal ID,White Terminal :]
-[White Terminal ID,White Terminal =,White Nonterminal Expr]
-[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
-[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
-[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
-[White Terminal CR,White Nonterminal TheRest]
-[White Terminal Goto,White Terminal ID]
-[White Terminal ID,White Terminal (,White Terminal )]
-[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
-[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
-[White Terminal ID,White Terminal :]
-[White Terminal ID,White Terminal =,White Nonterminal Expr]
-[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
-[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
-[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
-[White Terminal Else,White Nonterminal CRStmtCRs,White Terminal EndIf]
-[White Terminal ElseIf,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
-[White Terminal EndIf]
-
-["Goto","ID"]
-["ID","(",")"]
-["ID",".","ID","(","...",")"]
-["ID",".","ID","=","..."]
-["ID",":"]
-["ID","=","..."]
-["If","...","Then","..."]
-["Sub","ID","...","EndSub"]
-["While","...","EndWhile"]
-["CR","..."]
-["Else","...","EndIf"]
-["ElseIf","...","Then","..."]
-["EndIf"]
-
-Candidates:
+Candidates: bm2-6
 [White Terminal Goto,White Terminal ID]
 [White Terminal ID,White Terminal (,White Terminal )]
 [White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
@@ -454,7 +416,7 @@ Candidates:
 ["ElseIf","...","Then","..."]
 ["EndIf"]
 
-Candidates:
+Candidates: bm2-7
 [White Terminal Goto,White Terminal ID]
 [White Terminal ID,White Terminal (,White Terminal )]
 [White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
@@ -492,7 +454,45 @@ Candidates:
 ["ElseIf","...","Then","..."]
 ["EndIf"]
 
-Candidates:
+Candidates: bm2-8
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal Else,White Nonterminal CRStmtCRs,White Terminal EndIf]
+[White Terminal ElseIf,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal EndIf]
+
+["Goto","ID"]
+["ID","(",")"]
+["ID",".","ID","(","...",")"]
+["ID",".","ID","=","..."]
+["ID",":"]
+["ID","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["Else","...","EndIf"]
+["ElseIf","...","Then","..."]
+["EndIf"]
+
+Candidates: bm2-9
 [White Terminal For,White Terminal ID,White Terminal =,White Nonterminal Expr,White Terminal To,White Nonterminal Expr,White Nonterminal OptStep,White Nonterminal CRStmtCRs,White Terminal EndFor]
 [White Terminal Goto,White Terminal ID]
 [White Terminal ID,White Terminal (,White Terminal )]
@@ -533,10 +533,10 @@ Candidates:
 ["ElseIf","...","Then","..."]
 ["EndIf"]
 
-Candidates:
+Candidates: bm3-1
 
 
-Candidates:
+Candidates: bm3-2
 [White Terminal .,White Terminal ID]
 [White Terminal *,White Nonterminal UnaryExpr]
 [White Terminal /,White Nonterminal UnaryExpr]
@@ -565,40 +565,7 @@ Candidates:
 ["And","..."]
 ["Or","..."]
 
-Candidates:
-[White Terminal .,White Terminal ID]
-[White Terminal [,White Nonterminal Expr,White Terminal ]]
-[White Terminal *,White Nonterminal UnaryExpr]
-[White Terminal /,White Nonterminal UnaryExpr]
-[White Terminal +,White Nonterminal MultiplicativeExpr]
-[White Terminal -,White Nonterminal MultiplicativeExpr]
-[White Terminal <,White Nonterminal AdditiveExpr]
-[White Terminal <=,White Nonterminal AdditiveExpr]
-[White Terminal >,White Nonterminal AdditiveExpr]
-[White Terminal >=,White Nonterminal AdditiveExpr]
-[White Terminal <>,White Nonterminal CompExpr]
-[White Terminal =,White Nonterminal CompExpr]
-[White Terminal And,White Nonterminal EqNeqExpr]
-[White Terminal Or,White Nonterminal AndExpr]
-[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
-
-[".","ID"]
-["[","...","]"]
-["*","..."]
-["/","..."]
-["+","..."]
-["-","..."]
-["<","..."]
-["<=","..."]
-[">","..."]
-[">=","..."]
-["<>","..."]
-["=","..."]
-["And","..."]
-["Or","..."]
-["Then","..."]
-
-Candidates:
+Candidates: bm3-3
 [White Terminal .,White Terminal ID]
 [White Terminal [,White Nonterminal Expr,White Terminal ]]
 [White Terminal *,White Nonterminal UnaryExpr]
@@ -631,7 +598,7 @@ Candidates:
 ["Or","..."]
 ["Then","..."]
 
-Candidates:
+Candidates: bm3-4
 [White Terminal .,White Terminal ID]
 [White Terminal [,White Nonterminal Expr,White Terminal ]]
 [White Terminal *,White Nonterminal UnaryExpr]
@@ -664,7 +631,7 @@ Candidates:
 ["Or","..."]
 ["Then","..."]
 
-Candidates:
+Candidates: bm3-5
 [White Terminal .,White Terminal ID]
 [White Terminal [,White Nonterminal Expr,White Terminal ]]
 [White Terminal *,White Nonterminal UnaryExpr]
@@ -697,7 +664,7 @@ Candidates:
 ["Or","..."]
 ["Then","..."]
 
-Candidates:
+Candidates: bm3-6
 [White Terminal .,White Terminal ID]
 [White Terminal [,White Nonterminal Expr,White Terminal ]]
 [White Terminal *,White Nonterminal UnaryExpr]
@@ -730,7 +697,7 @@ Candidates:
 ["Or","..."]
 ["Then","..."]
 
-Candidates:
+Candidates: bm3-7
 [White Terminal .,White Terminal ID]
 [White Terminal [,White Nonterminal Expr,White Terminal ]]
 [White Terminal *,White Nonterminal UnaryExpr]
@@ -763,7 +730,7 @@ Candidates:
 ["Or","..."]
 ["Then","..."]
 
-Candidates:
+Candidates: bm3-8
 [White Terminal .,White Terminal ID]
 [White Terminal [,White Nonterminal Expr,White Terminal ]]
 [White Terminal *,White Nonterminal UnaryExpr]
@@ -796,12 +763,45 @@ Candidates:
 ["Or","..."]
 ["Then","..."]
 
-Candidates:
+Candidates: bm3-9 
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Candidates: bm4-1
 [White Terminal EndIf]
 
 ["EndIf"]
 
-Candidates:
+Candidates: bm4-2
 [White Terminal Goto,White Terminal ID]
 [White Terminal ID,White Terminal :]
 [White Terminal CR,White Nonterminal TheRest]
@@ -814,7 +814,7 @@ Candidates:
 ["CR","..."]
 ["EndIf"]
 
-Candidates:
+Candidates: bm4-3
 [White Terminal Goto,White Terminal ID]
 [White Terminal ID,White Terminal (,White Terminal )]
 [White Terminal ID,White Terminal :]
@@ -835,7 +835,7 @@ Candidates:
 ["Else","...","EndIf"]
 ["EndIf"]
 
-Candidates:
+Candidates: bm4-4
 [White Terminal Goto,White Terminal ID]
 [White Terminal ID,White Terminal (,White Terminal )]
 [White Terminal ID,White Terminal :]
@@ -862,7 +862,7 @@ Candidates:
 ["Else","...","EndIf"]
 ["EndIf"]
 
-Candidates:
+Candidates: bm4-5
 [White Terminal Goto,White Terminal ID]
 [White Terminal ID,White Terminal (,White Terminal )]
 [White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
@@ -897,45 +897,7 @@ Candidates:
 ["ElseIf","...","Then","..."]
 ["EndIf"]
 
-Candidates:
-[White Terminal Goto,White Terminal ID]
-[White Terminal ID,White Terminal (,White Terminal )]
-[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
-[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
-[White Terminal ID,White Terminal :]
-[White Terminal ID,White Terminal =,White Nonterminal Expr]
-[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
-[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
-[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
-[White Terminal CR,White Nonterminal TheRest]
-[White Terminal Goto,White Terminal ID]
-[White Terminal ID,White Terminal (,White Terminal )]
-[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
-[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
-[White Terminal ID,White Terminal :]
-[White Terminal ID,White Terminal =,White Nonterminal Expr]
-[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
-[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
-[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
-[White Terminal Else,White Nonterminal CRStmtCRs,White Terminal EndIf]
-[White Terminal ElseIf,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
-[White Terminal EndIf]
-
-["Goto","ID"]
-["ID","(",")"]
-["ID",".","ID","(","...",")"]
-["ID",".","ID","=","..."]
-["ID",":"]
-["ID","=","..."]
-["If","...","Then","..."]
-["Sub","ID","...","EndSub"]
-["While","...","EndWhile"]
-["CR","..."]
-["Else","...","EndIf"]
-["ElseIf","...","Then","..."]
-["EndIf"]
-
-Candidates:
+Candidates: bm4-6
 [White Terminal Goto,White Terminal ID]
 [White Terminal ID,White Terminal (,White Terminal )]
 [White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
@@ -973,7 +935,7 @@ Candidates:
 ["ElseIf","...","Then","..."]
 ["EndIf"]
 
-Candidates:
+Candidates: bm4-7
 [White Terminal Goto,White Terminal ID]
 [White Terminal ID,White Terminal (,White Terminal )]
 [White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
@@ -1011,7 +973,45 @@ Candidates:
 ["ElseIf","...","Then","..."]
 ["EndIf"]
 
-Candidates:
+Candidates: bm4-8
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal Else,White Nonterminal CRStmtCRs,White Terminal EndIf]
+[White Terminal ElseIf,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal EndIf]
+
+["Goto","ID"]
+["ID","(",")"]
+["ID",".","ID","(","...",")"]
+["ID",".","ID","=","..."]
+["ID",":"]
+["ID","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["Else","...","EndIf"]
+["ElseIf","...","Then","..."]
+["EndIf"]
+
+Candidates: bm4-9
 [White Terminal For,White Terminal ID,White Terminal =,White Nonterminal Expr,White Terminal To,White Nonterminal Expr,White Nonterminal OptStep,White Nonterminal CRStmtCRs,White Terminal EndFor]
 [White Terminal Goto,White Terminal ID]
 [White Terminal ID,White Terminal (,White Terminal )]
