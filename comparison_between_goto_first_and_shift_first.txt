@@ -1,0 +1,2345 @@
+khchoi@khchoi-ThinkPad-X1-Carbon-5th:~/work/lang/haskell/sbparser$ stack test
+sbparser-0.1.0.0: unregistering
+yapb-0.2.6: unregistering
+yapb    > configure (lib + exe)
+yapb    > Configuring yapb-0.2.7...
+yapb    > build (lib + exe)
+yapb    > Preprocessing library for yapb-0.2.7..
+yapb    > Building library for yapb-0.2.7..
+yapb    > [ 1 of 28] Compiling AVL
+yapb    > [ 2 of 28] Compiling Attrs
+yapb    > [ 3 of 28] Compiling AutomatonType
+yapb    > [ 4 of 28] Compiling CFG
+yapb    > [ 5 of 28] Compiling CmdArgs
+yapb    > [ 6 of 28] Compiling Config
+yapb    > [ 7 of 28] Compiling MaxRhsLen
+yapb    > [ 8 of 28] Compiling ParserTable
+yapb    > [ 9 of 28] Compiling GenLRParserTable
+yapb    > [10 of 28] Compiling Paths_yapb
+yapb    > [11 of 28] Compiling ReadGrammar
+yapb    > [12 of 28] Compiling SampleGrammar
+yapb    > [13 of 28] Compiling CodeGenC
+yapb    > [14 of 28] Compiling SaveProdRules
+yapb    > [15 of 28] Compiling LoadAutomaton
+yapb    > [16 of 28] Compiling SynCompAlgoUtil
+yapb    > [17 of 28] Compiling SynCompInterface
+yapb    > [18 of 28] Compiling EmacsServer
+yapb    > [19 of 28] Compiling TokenInterface
+yapb    > [20 of 28] Compiling Terminal
+yapb    > [21 of 28] Compiling CommonParserUtil
+yapb    > [22 of 28] Compiling SynCompAlgoTD
+yapb    > [23 of 28] Compiling SynCompAlgoPEPM
+yapb    > [24 of 28] Compiling SynCompAlgoBUTreeNested
+yapb    > [25 of 28] Compiling SynCompAlgoBUTree
+yapb    > [26 of 28] Compiling SynCompAlgoBU
+yapb    > [27 of 28] Compiling SynCompAlgorithm
+yapb    > [28 of 28] Compiling ParserTime
+yapb    > Preprocessing executable 'yapb-exe' for yapb-0.2.7..
+yapb    > Building executable 'yapb-exe' for yapb-0.2.7..
+yapb    > [1 of 2] Compiling Main
+yapb    > [2 of 2] Compiling Paths_yapb
+yapb    > Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/yapb-exe/yapb-exe ...
+yapb    > Preprocessing executable 'syncomp-exe' for yapb-0.2.7..
+yapb    > Building executable 'syncomp-exe' for yapb-0.2.7..
+yapb    > [1 of 8] Compiling Expr
+yapb    > [2 of 8] Compiling Paths_yapb
+yapb    > [3 of 8] Compiling Token
+yapb    > [4 of 8] Compiling Parser
+yapb    > [5 of 8] Compiling Lexer
+yapb    > [6 of 8] Compiling SyntaxCompletion
+yapb    > [7 of 8] Compiling SyntaxCompletionSpec
+yapb    > [8 of 8] Compiling Main
+yapb    > Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/syncomp-exe/syncomp-exe ...
+yapb    > Preprocessing executable 'ambiguous-exe' for yapb-0.2.7..
+yapb    > Building executable 'ambiguous-exe' for yapb-0.2.7..
+yapb    > [1 of 8] Compiling Expr
+yapb    > [2 of 8] Compiling Paths_yapb
+yapb    > [3 of 8] Compiling Token
+yapb    > [4 of 8] Compiling Parser
+yapb    > [5 of 8] Compiling Lexer
+yapb    > [6 of 8] Compiling Run
+yapb    > [7 of 8] Compiling ParserSpec
+yapb    > [8 of 8] Compiling Main
+yapb    > Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/ambiguous-exe/ambiguous-exe ...
+yapb    > Preprocessing executable 'parser-exe' for yapb-0.2.7..
+yapb    > Building executable 'parser-exe' for yapb-0.2.7..
+yapb    > [1 of 8] Compiling Expr
+yapb    > [2 of 8] Compiling Paths_yapb
+yapb    > [3 of 8] Compiling Token
+yapb    > [4 of 8] Compiling Parser
+yapb    > [5 of 8] Compiling Lexer
+yapb    > [6 of 8] Compiling Run
+yapb    > [7 of 8] Compiling ParserSpec
+yapb    > [8 of 8] Compiling Main
+yapb    > Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/parser-exe/parser-exe ...
+yapb    > Preprocessing executable 'conv-exe' for yapb-0.2.7..
+yapb    > Building executable 'conv-exe' for yapb-0.2.7..
+yapb    > [1 of 2] Compiling Main
+yapb    > [2 of 2] Compiling Paths_yapb
+yapb    > Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/conv-exe/conv-exe ...
+yapb    > Preprocessing executable 'error-exe' for yapb-0.2.7..
+yapb    > Building executable 'error-exe' for yapb-0.2.7..
+yapb    > [1 of 8] Compiling Expr
+yapb    > [2 of 8] Compiling Paths_yapb
+yapb    > [3 of 8] Compiling Token
+yapb    > [4 of 8] Compiling Parser
+yapb    > [5 of 8] Compiling Lexer
+yapb    > [6 of 8] Compiling Run
+yapb    > [7 of 8] Compiling ParserSpec
+yapb    > [8 of 8] Compiling Main
+yapb    > Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/error-exe/error-exe ...
+yapb    > copy/register
+yapb    > Installing library in /home/khchoi/work/lang/haskell/sbparser/.stack-work/install/x86_64-linux-tinfo6/cb2dc249fa4e57153d58e4d7369eedf90284345cf729256ff35748b5942c369f/8.10.7/lib/x86_64-linux-ghc-8.10.7/yapb-0.2.7-HOn016GzFYABVkS1x5JHAJ
+yapb    > Installing executable yapb-exe in /home/khchoi/work/lang/haskell/sbparser/.stack-work/install/x86_64-linux-tinfo6/cb2dc249fa4e57153d58e4d7369eedf90284345cf729256ff35748b5942c369f/8.10.7/bin
+yapb    > Installing executable syncomp-exe in /home/khchoi/work/lang/haskell/sbparser/.stack-work/install/x86_64-linux-tinfo6/cb2dc249fa4e57153d58e4d7369eedf90284345cf729256ff35748b5942c369f/8.10.7/bin
+yapb    > Installing executable ambiguous-exe in /home/khchoi/work/lang/haskell/sbparser/.stack-work/install/x86_64-linux-tinfo6/cb2dc249fa4e57153d58e4d7369eedf90284345cf729256ff35748b5942c369f/8.10.7/bin
+yapb    > Installing executable parser-exe in /home/khchoi/work/lang/haskell/sbparser/.stack-work/install/x86_64-linux-tinfo6/cb2dc249fa4e57153d58e4d7369eedf90284345cf729256ff35748b5942c369f/8.10.7/bin
+yapb    > Installing executable conv-exe in /home/khchoi/work/lang/haskell/sbparser/.stack-work/install/x86_64-linux-tinfo6/cb2dc249fa4e57153d58e4d7369eedf90284345cf729256ff35748b5942c369f/8.10.7/bin
+yapb    > Installing executable error-exe in /home/khchoi/work/lang/haskell/sbparser/.stack-work/install/x86_64-linux-tinfo6/cb2dc249fa4e57153d58e4d7369eedf90284345cf729256ff35748b5942c369f/8.10.7/bin
+yapb    > Registering library for yapb-0.2.7..
+sbparser> configure (lib + exe + test)
+Configuring sbparser-0.1.0.0...
+sbparser> build (lib + exe + test)
+Preprocessing library for sbparser-0.1.0.0..
+Building library for sbparser-0.1.0.0..
+[1 of 8] Compiling Expr
+[2 of 8] Compiling Token
+[3 of 8] Compiling Parser
+[4 of 8] Compiling Lexer
+[5 of 8] Compiling SyntaxCompletion
+[6 of 8] Compiling SyntaxCompletionSpec
+[7 of 8] Compiling Main
+[8 of 8] Compiling Paths_sbparser
+Preprocessing executable 'sbparser-exe' for sbparser-0.1.0.0..
+Building executable 'sbparser-exe' for sbparser-0.1.0.0..
+[2 of 8] Compiling Token [TokenInterface changed]
+[3 of 8] Compiling Parser [ParserTime changed]
+[4 of 8] Compiling Lexer [CommonParserUtil changed]
+[5 of 8] Compiling SyntaxCompletion [SynCompAlgorithm changed]
+[6 of 8] Compiling SyntaxCompletionSpec [SynCompInterface changed]
+[7 of 8] Compiling Main [EmacsServer changed]
+[8 of 8] Compiling Paths_sbparser
+Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/sbparser-exe/sbparser-exe ...
+Preprocessing test suite 'sbparser-test' for sbparser-0.1.0.0..
+Building test suite 'sbparser-test' for sbparser-0.1.0.0..
+[1 of 2] Compiling Main [Config changed]
+[2 of 2] Compiling Paths_sbparser
+Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/sbparser-test/sbparser-test ...
+sbparser> copy/register
+Installing library in /home/khchoi/work/lang/haskell/sbparser/.stack-work/install/x86_64-linux-tinfo6/cb2dc249fa4e57153d58e4d7369eedf90284345cf729256ff35748b5942c369f/8.10.7/lib/x86_64-linux-ghc-8.10.7/sbparser-0.1.0.0-6tqXm7OgEr99FTxofTihqx
+Installing executable sbparser-exe in /home/khchoi/work/lang/haskell/sbparser/.stack-work/install/x86_64-linux-tinfo6/cb2dc249fa4e57153d58e4d7369eedf90284345cf729256ff35748b5942c369f/8.10.7/bin
+Registering library for sbparser-0.1.0.0..
+sbparser> test (suite: sbparser-test)
+
+Progress 2/3: sbparser
+Smallbasic
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 1, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.01s
+Time:   0.00
+Candidates:
+
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 2, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:   0.02
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+
+[".","ID"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 3, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:   0.01
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 4, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:   0.01
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 5, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:   0.04
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 6, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:   0.15
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 7, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.02s
+Time:   0.49
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 8, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:   1.71
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 9, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:   5.97
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+  [Benchmark1] 
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 1, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.01s
+Time:   0.00
+Candidates:
+[White Nonterminal MoreThanZeroElseIf]
+[White Nonterminal OptionalElse]
+
+["..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 2, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.01s
+Time:   0.00
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal :]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal :]
+[White Nonterminal MoreThanZeroElseIf]
+[White Nonterminal OptionalElse]
+
+["Goto","ID"]
+["ID",":"]
+["CR","..."]
+["..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 3, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:   0.01
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Nonterminal MoreThanZeroElseIf]
+[White Nonterminal OptionalElse]
+
+["Goto","ID"]
+["ID","(",")"]
+["ID",":"]
+["ID","=","..."]
+["CR","..."]
+["..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 4, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:   0.02
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Nonterminal MoreThanZeroElseIf]
+[White Nonterminal OptionalElse]
+
+["Goto","ID"]
+["ID","...","=","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 5, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:   0.06
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Nonterminal MoreThanZeroElseIf]
+[White Nonterminal OptionalElse]
+
+["Goto","ID"]
+["ID","...","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 6, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.01s
+Time:   0.19
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Nonterminal MoreThanZeroElseIf]
+[White Nonterminal OptionalElse]
+
+["Goto","ID"]
+["ID","...","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 7, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.01s
+Time:   0.68
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Nonterminal MoreThanZeroElseIf]
+[White Nonterminal OptionalElse]
+
+["Goto","ID"]
+["ID","...","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 8, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:   2.12
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Nonterminal MoreThanZeroElseIf]
+[White Nonterminal OptionalElse]
+
+["Goto","ID"]
+["ID","...","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 9, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.01s
+Time:   7.83
+Candidates:
+[White Terminal For,White Terminal ID,White Terminal =,White Nonterminal Expr,White Terminal To,White Nonterminal Expr,White Nonterminal OptStep,White Nonterminal CRStmtCRs,White Terminal EndFor]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal For,White Terminal ID,White Terminal =,White Nonterminal Expr,White Terminal To,White Nonterminal Expr,White Nonterminal OptStep,White Nonterminal CRStmtCRs,White Terminal EndFor]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Nonterminal MoreThanZeroElseIf]
+[White Nonterminal OptionalElse]
+
+["For","ID","=","...","To","...","EndFor"]
+["Goto","ID"]
+["ID","...","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["..."]
+
+  [Benchmark2] 
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 1, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.95s
+Time:   0.00
+Candidates:
+
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 2, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.52s
+Time:   0.01
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+
+[".","ID"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 3, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.58s
+Time:   0.01
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 4, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   4.17s
+Time:   0.02
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 5, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   4.81s
+Time:   0.06
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 6, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.71s
+Time:   0.18
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 7, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.69s
+Time:   0.59
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 8, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.53s
+Time:   1.71
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 9, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.72s
+Time:   6.02
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+  [Benchmark3] 
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 1, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.54s
+Time:   0.00
+Candidates:
+[White Nonterminal MoreThanZeroElseIf]
+[White Nonterminal OptionalElse]
+
+["..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 2, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   4.00s
+Time:   0.00
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal :]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal :]
+[White Nonterminal MoreThanZeroElseIf]
+[White Nonterminal OptionalElse]
+
+["Goto","ID"]
+["ID",":"]
+["CR","..."]
+["..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 3, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.78s
+Time:   0.01
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Nonterminal MoreThanZeroElseIf]
+[White Nonterminal OptionalElse]
+
+["Goto","ID"]
+["ID","(",")"]
+["ID",":"]
+["ID","=","..."]
+["CR","..."]
+["..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 4, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   4.08s
+Time:   0.05
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Nonterminal MoreThanZeroElseIf]
+[White Nonterminal OptionalElse]
+
+["Goto","ID"]
+["ID","...","=","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 5, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.73s
+Time:   0.05
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Nonterminal MoreThanZeroElseIf]
+[White Nonterminal OptionalElse]
+
+["Goto","ID"]
+["ID","...","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 6, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.68s
+Time:   0.24
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Nonterminal MoreThanZeroElseIf]
+[White Nonterminal OptionalElse]
+
+["Goto","ID"]
+["ID","...","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 7, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.67s
+Time:   0.76
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Nonterminal MoreThanZeroElseIf]
+[White Nonterminal OptionalElse]
+
+["Goto","ID"]
+["ID","...","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 8, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.63s
+Time:   2.39
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Nonterminal MoreThanZeroElseIf]
+[White Nonterminal OptionalElse]
+
+["Goto","ID"]
+["ID","...","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 9, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.76s
+Time:   7.97
+Candidates:
+[White Terminal For,White Terminal ID,White Terminal =,White Nonterminal Expr,White Terminal To,White Nonterminal Expr,White Nonterminal OptStep,White Nonterminal CRStmtCRs,White Terminal EndFor]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal For,White Terminal ID,White Terminal =,White Nonterminal Expr,White Terminal To,White Nonterminal Expr,White Nonterminal OptStep,White Nonterminal CRStmtCRs,White Terminal EndFor]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Nonterminal Idxs,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Nonterminal MoreThanZeroElseIf]
+[White Nonterminal OptionalElse]
+
+["For","ID","=","...","To","...","EndFor"]
+["Goto","ID"]
+["ID","...","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["..."]
+
+  [Benchmark4] 
+
+Finished in 79.9140 seconds
+4 examples, 0 failures
+
+sbparser> Test suite sbparser-test passed
+Completed 3 action(s).
+khchoi@khchoi-ThinkPad-X1-Carbon-5th:~/work/lang/haskell/sbparser$ echo "Shift first Goto next"
+Shift first Goto next
+khchoi@khchoi-ThinkPad-X1-Carbon-5th:~/work/lang/haskell/sbparser$ stack test
+sbparser-0.1.0.0: unregistering (missing dependencies: yapb)
+yapb-0.2.7: unregistering (local file changes: src/parserlib/algo/SynCompAlgoBUTree.hs)
+yapb    > build (lib + exe)
+yapb    > Preprocessing library for yapb-0.2.7..
+yapb    > Building library for yapb-0.2.7..
+yapb    > [27 of 28] Compiling SynCompAlgoBUTree
+yapb    > Preprocessing executable 'yapb-exe' for yapb-0.2.7..
+yapb    > Building executable 'yapb-exe' for yapb-0.2.7..
+yapb    > Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/yapb-exe/yapb-exe ...
+yapb    > Preprocessing executable 'syncomp-exe' for yapb-0.2.7..
+yapb    > Building executable 'syncomp-exe' for yapb-0.2.7..
+yapb    > Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/syncomp-exe/syncomp-exe ...
+yapb    > Preprocessing executable 'ambiguous-exe' for yapb-0.2.7..
+yapb    > Building executable 'ambiguous-exe' for yapb-0.2.7..
+yapb    > Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/ambiguous-exe/ambiguous-exe ...
+yapb    > Preprocessing executable 'parser-exe' for yapb-0.2.7..
+yapb    > Building executable 'parser-exe' for yapb-0.2.7..
+yapb    > Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/parser-exe/parser-exe ...
+yapb    > Preprocessing executable 'conv-exe' for yapb-0.2.7..
+yapb    > Building executable 'conv-exe' for yapb-0.2.7..
+yapb    > Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/conv-exe/conv-exe ...
+yapb    > Preprocessing executable 'error-exe' for yapb-0.2.7..
+yapb    > Building executable 'error-exe' for yapb-0.2.7..
+yapb    > Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/error-exe/error-exe ...
+yapb    > copy/register
+yapb    > Installing library in /home/khchoi/work/lang/haskell/sbparser/.stack-work/install/x86_64-linux-tinfo6/cb2dc249fa4e57153d58e4d7369eedf90284345cf729256ff35748b5942c369f/8.10.7/lib/x86_64-linux-ghc-8.10.7/yapb-0.2.7-HOn016GzFYABVkS1x5JHAJ
+yapb    > Installing executable yapb-exe in /home/khchoi/work/lang/haskell/sbparser/.stack-work/install/x86_64-linux-tinfo6/cb2dc249fa4e57153d58e4d7369eedf90284345cf729256ff35748b5942c369f/8.10.7/bin
+yapb    > Installing executable syncomp-exe in /home/khchoi/work/lang/haskell/sbparser/.stack-work/install/x86_64-linux-tinfo6/cb2dc249fa4e57153d58e4d7369eedf90284345cf729256ff35748b5942c369f/8.10.7/bin
+yapb    > Installing executable ambiguous-exe in /home/khchoi/work/lang/haskell/sbparser/.stack-work/install/x86_64-linux-tinfo6/cb2dc249fa4e57153d58e4d7369eedf90284345cf729256ff35748b5942c369f/8.10.7/bin
+yapb    > Installing executable parser-exe in /home/khchoi/work/lang/haskell/sbparser/.stack-work/install/x86_64-linux-tinfo6/cb2dc249fa4e57153d58e4d7369eedf90284345cf729256ff35748b5942c369f/8.10.7/bin
+yapb    > Installing executable conv-exe in /home/khchoi/work/lang/haskell/sbparser/.stack-work/install/x86_64-linux-tinfo6/cb2dc249fa4e57153d58e4d7369eedf90284345cf729256ff35748b5942c369f/8.10.7/bin
+yapb    > Installing executable error-exe in /home/khchoi/work/lang/haskell/sbparser/.stack-work/install/x86_64-linux-tinfo6/cb2dc249fa4e57153d58e4d7369eedf90284345cf729256ff35748b5942c369f/8.10.7/bin
+yapb    > Registering library for yapb-0.2.7..
+sbparser> build (lib + exe + test)
+Preprocessing library for sbparser-0.1.0.0..
+Building library for sbparser-0.1.0.0..
+Preprocessing executable 'sbparser-exe' for sbparser-0.1.0.0..
+Building executable 'sbparser-exe' for sbparser-0.1.0.0..
+Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/sbparser-exe/sbparser-exe ...
+Preprocessing test suite 'sbparser-test' for sbparser-0.1.0.0..
+Building test suite 'sbparser-test' for sbparser-0.1.0.0..
+Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/sbparser-test/sbparser-test ...
+sbparser> copy/register
+Installing library in /home/khchoi/work/lang/haskell/sbparser/.stack-work/install/x86_64-linux-tinfo6/cb2dc249fa4e57153d58e4d7369eedf90284345cf729256ff35748b5942c369f/8.10.7/lib/x86_64-linux-ghc-8.10.7/sbparser-0.1.0.0-6tqXm7OgEr99FTxofTihqx
+Installing executable sbparser-exe in /home/khchoi/work/lang/haskell/sbparser/.stack-work/install/x86_64-linux-tinfo6/cb2dc249fa4e57153d58e4d7369eedf90284345cf729256ff35748b5942c369f/8.10.7/bin
+Registering library for sbparser-0.1.0.0..
+sbparser> test (suite: sbparser-test)
+
+Progress 2/3: sbparser
+Smallbasic
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 1, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.01s
+Time:   0.00
+Candidates:
+
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 2, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.01s
+Time:   0.01
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+
+[".","ID"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 3, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:   0.02
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 4, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.01s
+Time:   0.05
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 5, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:   0.19
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 6, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:   0.56
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 7, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.01s
+Time:   1.88
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 8, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:   6.81
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 9, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:  25.64
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+  [Benchmark1] 
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 1, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.02s
+Time:   0.00
+Candidates:
+[White Terminal EndIf]
+
+["EndIf"]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 2, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:   0.00
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal :]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal :]
+[White Terminal EndIf]
+
+["Goto","ID"]
+["ID",":"]
+["CR","..."]
+["EndIf"]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 3, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.01s
+Time:   0.01
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal Else,White Nonterminal CRStmtCRs,White Terminal EndIf]
+[White Terminal EndIf]
+
+["Goto","ID"]
+["ID","(",")"]
+["ID",":"]
+["ID","=","..."]
+["CR","..."]
+["Else","...","EndIf"]
+["EndIf"]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 4, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:   0.04
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal Else,White Nonterminal CRStmtCRs,White Terminal EndIf]
+[White Terminal EndIf]
+
+["Goto","ID"]
+["ID","(",")"]
+["ID",":"]
+["ID","=","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["Else","...","EndIf"]
+["EndIf"]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 5, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.01s
+Time:   0.15
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal Else,White Nonterminal CRStmtCRs,White Terminal EndIf]
+[White Terminal ElseIf,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal EndIf]
+
+["Goto","ID"]
+["ID","(",")"]
+["ID",".","ID","=","..."]
+["ID",":"]
+["ID","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["Else","...","EndIf"]
+["ElseIf","...","Then","..."]
+["EndIf"]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 6, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:   0.59
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal Else,White Nonterminal CRStmtCRs,White Terminal EndIf]
+[White Terminal ElseIf,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal EndIf]
+
+["Goto","ID"]
+["ID","(",")"]
+["ID",".","ID","(","...",")"]
+["ID",".","ID","=","..."]
+["ID",":"]
+["ID","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["Else","...","EndIf"]
+["ElseIf","...","Then","..."]
+["EndIf"]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 7, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.01s
+Time:   2.27
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal Else,White Nonterminal CRStmtCRs,White Terminal EndIf]
+[White Terminal ElseIf,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal EndIf]
+
+["Goto","ID"]
+["ID","(",")"]
+["ID",".","ID","(","...",")"]
+["ID",".","ID","=","..."]
+["ID",":"]
+["ID","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["Else","...","EndIf"]
+["ElseIf","...","Then","..."]
+["EndIf"]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 8, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:   6.76
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal Else,White Nonterminal CRStmtCRs,White Terminal EndIf]
+[White Terminal ElseIf,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal EndIf]
+
+["Goto","ID"]
+["ID","(",")"]
+["ID",".","ID","(","...",")"]
+["ID",".","ID","=","..."]
+["ID",":"]
+["ID","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["Else","...","EndIf"]
+["ElseIf","...","Then","..."]
+["EndIf"]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 9, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   0.00s
+Time:  25.22
+Candidates:
+[White Terminal For,White Terminal ID,White Terminal =,White Nonterminal Expr,White Terminal To,White Nonterminal Expr,White Nonterminal OptStep,White Nonterminal CRStmtCRs,White Terminal EndFor]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal For,White Terminal ID,White Terminal =,White Nonterminal Expr,White Terminal To,White Nonterminal Expr,White Nonterminal OptStep,White Nonterminal CRStmtCRs,White Terminal EndFor]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal Else,White Nonterminal CRStmtCRs,White Terminal EndIf]
+[White Terminal ElseIf,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal EndIf]
+
+["For","ID","=","...","To","...","EndFor"]
+["Goto","ID"]
+["ID","(",")"]
+["ID",".","ID","(","...",")"]
+["ID",".","ID","=","..."]
+["ID",":"]
+["ID","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["Else","...","EndIf"]
+["ElseIf","...","Then","..."]
+["EndIf"]
+
+  [Benchmark2] 
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 1, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.70s
+Time:   0.00
+Candidates:
+
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 2, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.64s
+Time:   0.00
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+
+[".","ID"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 3, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   4.18s
+Time:   0.04
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 4, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.76s
+Time:   0.06
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 5, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.60s
+Time:   0.17
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 6, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.75s
+Time:   0.58
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 7, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.72s
+Time:   2.33
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 8, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.64s
+Time:   7.22
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 9, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.79s
+Time:  26.31
+Candidates:
+[White Terminal .,White Terminal ID]
+[White Terminal [,White Nonterminal Expr,White Terminal ]]
+[White Terminal *,White Nonterminal UnaryExpr]
+[White Terminal /,White Nonterminal UnaryExpr]
+[White Terminal +,White Nonterminal MultiplicativeExpr]
+[White Terminal -,White Nonterminal MultiplicativeExpr]
+[White Terminal <,White Nonterminal AdditiveExpr]
+[White Terminal <=,White Nonterminal AdditiveExpr]
+[White Terminal >,White Nonterminal AdditiveExpr]
+[White Terminal >=,White Nonterminal AdditiveExpr]
+[White Terminal <>,White Nonterminal CompExpr]
+[White Terminal =,White Nonterminal CompExpr]
+[White Terminal And,White Nonterminal EqNeqExpr]
+[White Terminal Or,White Nonterminal AndExpr]
+[White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+
+[".","ID"]
+["[","...","]"]
+["*","..."]
+["/","..."]
+["+","..."]
+["-","..."]
+["<","..."]
+["<=","..."]
+[">","..."]
+[">=","..."]
+["<>","..."]
+["=","..."]
+["And","..."]
+["Or","..."]
+["Then","..."]
+
+  [Benchmark3] 
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 1, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.70s
+Time:   0.00
+Candidates:
+[White Terminal EndIf]
+
+["EndIf"]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 2, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.60s
+Time:   0.02
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal :]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal :]
+[White Terminal EndIf]
+
+["Goto","ID"]
+["ID",":"]
+["CR","..."]
+["EndIf"]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 3, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.78s
+Time:   0.01
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal Else,White Nonterminal CRStmtCRs,White Terminal EndIf]
+[White Terminal EndIf]
+
+["Goto","ID"]
+["ID","(",")"]
+["ID",":"]
+["ID","=","..."]
+["CR","..."]
+["Else","...","EndIf"]
+["EndIf"]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 4, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.59s
+Time:   0.05
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal Else,White Nonterminal CRStmtCRs,White Terminal EndIf]
+[White Terminal EndIf]
+
+["Goto","ID"]
+["ID","(",")"]
+["ID",":"]
+["ID","=","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["Else","...","EndIf"]
+["EndIf"]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 5, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.63s
+Time:   0.20
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal Else,White Nonterminal CRStmtCRs,White Terminal EndIf]
+[White Terminal ElseIf,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal EndIf]
+
+["Goto","ID"]
+["ID","(",")"]
+["ID",".","ID","=","..."]
+["ID",":"]
+["ID","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["Else","...","EndIf"]
+["ElseIf","...","Then","..."]
+["EndIf"]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 6, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.77s
+Time:   0.68
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal Else,White Nonterminal CRStmtCRs,White Terminal EndIf]
+[White Terminal ElseIf,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal EndIf]
+
+["Goto","ID"]
+["ID","(",")"]
+["ID",".","ID","(","...",")"]
+["ID",".","ID","=","..."]
+["ID",":"]
+["ID","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["Else","...","EndIf"]
+["ElseIf","...","Then","..."]
+["EndIf"]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 7, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.70s
+Time:   2.05
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal Else,White Nonterminal CRStmtCRs,White Terminal EndIf]
+[White Terminal ElseIf,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal EndIf]
+
+["Goto","ID"]
+["ID","(",")"]
+["ID",".","ID","(","...",")"]
+["ID",".","ID","=","..."]
+["ID",":"]
+["ID","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["Else","...","EndIf"]
+["ElseIf","...","Then","..."]
+["EndIf"]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 8, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.74s
+Time:   7.34
+Candidates:
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal Else,White Nonterminal CRStmtCRs,White Terminal EndIf]
+[White Terminal ElseIf,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal EndIf]
+
+["Goto","ID"]
+["ID","(",")"]
+["ID",".","ID","(","...",")"]
+["ID",".","ID","=","..."]
+["ID",":"]
+["ID","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["Else","...","EndIf"]
+["ElseIf","...","Then","..."]
+["EndIf"]
+
+Configuration {config_SIMPLE = True, config_R_LEVEL = 1, config_GS_LEVEL = 9, config_DEBUG = False, config_DISPLAY = False, config_PRESENTATION = 0, config_ALGORITHM = 3}
+parse time:   3.80s
+Time:  25.83
+Candidates:
+[White Terminal For,White Terminal ID,White Terminal =,White Nonterminal Expr,White Terminal To,White Nonterminal Expr,White Nonterminal OptStep,White Nonterminal CRStmtCRs,White Terminal EndFor]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal CR,White Nonterminal TheRest]
+[White Terminal For,White Terminal ID,White Terminal =,White Nonterminal Expr,White Terminal To,White Nonterminal Expr,White Nonterminal OptStep,White Nonterminal CRStmtCRs,White Terminal EndFor]
+[White Terminal Goto,White Terminal ID]
+[White Terminal ID,White Terminal (,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal (,White Nonterminal Exprs,White Terminal )]
+[White Terminal ID,White Terminal .,White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal ID,White Terminal :]
+[White Terminal ID,White Terminal =,White Nonterminal Expr]
+[White Terminal If,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal Sub,White Terminal ID,White Nonterminal CRStmtCRs,White Terminal EndSub]
+[White Terminal While,White Nonterminal Expr,White Nonterminal CRStmtCRs,White Terminal EndWhile]
+[White Terminal Else,White Nonterminal CRStmtCRs,White Terminal EndIf]
+[White Terminal ElseIf,White Nonterminal Expr,White Terminal Then,White Nonterminal CRStmtCRs,White Nonterminal MoreThanZeroElseIf]
+[White Terminal EndIf]
+
+["For","ID","=","...","To","...","EndFor"]
+["Goto","ID"]
+["ID","(",")"]
+["ID",".","ID","(","...",")"]
+["ID",".","ID","=","..."]
+["ID",":"]
+["ID","=","..."]
+["If","...","Then","..."]
+["Sub","ID","...","EndSub"]
+["While","...","EndWhile"]
+["CR","..."]
+["Else","...","EndIf"]
+["ElseIf","...","Then","..."]
+["EndIf"]
+
+  [Benchmark4] 
+
+Finished in 176.0320 seconds
+4 examples, 0 failures
+
+sbparser> Test suite sbparser-test passed
+Completed 3 action(s).
+khchoi@khchoi-ThinkPad-X1-Carbon-5th:~/work/lang/haskell/sbparser$ 
