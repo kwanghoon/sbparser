@@ -1,6 +1,6 @@
 GraphicsWindow.BrushColor = "Blue" 
 GraphicsWindow.MouseDown = OnMouseDown 
-Sub OnMouseDown   
+Sub OnMouseDown
 	x = GraphicsWindow.MouseX - 10   
 	y = GraphicsWindow.MouseY - 10   
 	GraphicsWindow.FillEllipse(x, y, 20, 20) 
