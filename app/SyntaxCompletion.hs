@@ -26,7 +26,7 @@ import Expr
 import SynCompInterface ( EmacsDataItem, stateEmacsDataItem )
 import Control.Exception ( catch )
 import Data.Maybe ()
-import SynCompAlgorithm ( chooseCompCandidatesFn )
+import SynCompAlgorithm ( chooseCompCandidatesFn, collectStates )
 import Config ( readConfig, Configuration(config_TABSTATE) )
 
 -- Todo: The following part should be moved to the library.
@@ -51,27 +51,30 @@ computeCand debug programTextUptoCursor programTextAfterCursor isSimpleMode =
 
         `catch` \parseError ->
           case parseError :: ParseError Token Expr () of
-            _ ->
-
-              
+            _ ->              
 
               {- 2. Computing candidates with it -}
-              do let ((_,line,column,programTextAfterCursor), stateAtTapPosition) = lpStateFrom parseError
-                 if collectionMode 
-                  then return $ [ stateEmacsDataItem stateAtTapPosition ]
-                  else 
-                    do  compCandidates <- chooseCompCandidatesFn
+              do  let ((_,line,column,programTextAfterCursor), stateAtTapPosition) 
+                        = lpStateFrom parseError
 
-                        handleParseError compCandidates
-                          (defaultHandleParseError lexerSpec parserSpec)
-                            {
-                              debugFlag=debug,
-                              searchMaxLevel=maxLevel,
-                              simpleOrNested=isSimpleMode,
-                              postTerminalList=[],  -- terminalListAfterCursor is set to []!
-                              nonterminalToStringMaybe=Nothing
-                            }
-                          parseError))
+                  handleFn <- if collectionMode 
+                              then do putStrLn "TAB STATE mode: "
+                                      return collectStates
+                              else chooseCompCandidatesFn
+
+                  -- return $ [ stateEmacsDataItem stateAtTapPosition ]
+                  let compCandidates = handleFn
+
+                  handleParseError compCandidates
+                    (defaultHandleParseError lexerSpec parserSpec)
+                      {
+                        debugFlag=debug,
+                        searchMaxLevel=maxLevel,
+                        simpleOrNested=isSimpleMode,
+                        postTerminalList=[],  -- terminalListAfterCursor is set to []!
+                        nonterminalToStringMaybe=Nothing
+                      }
+                    parseError ))
 
       `catch` \lexError ->  case lexError :: LexError of  _ -> handleLexError
 
