@@ -72,7 +72,7 @@ computeCand debug programTextUptoCursor programTextAfterCursor isSimpleMode =
                         searchMaxLevel=maxLevel,
                         simpleOrNested=isSimpleMode,
                         postTerminalList=[],  -- terminalListAfterCursor is set to []!
-                        nonterminalToStringMaybe=Nothing
+                        nonterminalToStringMaybe=Just (\nt->nt) -- Use nonterminals instead of ...!
                       }
                     parseError ))
 
