@@ -53,12 +53,12 @@
           (deleteEmpStr (cdr strList))
         (cons s (deleteEmpStr (cdr strList)))))))
 
-(defun make-cand (ccList) ;This function egnores colors.
+(defun make-cand (ccList) ;This function egnores colors, "Terminal", and "Nonterminal".
   (if (null ccList)
       nil
     (let* ((color (car ccList))
-           (cand (cadr ccList)))
-      (concat cand " " (make-cand (cddr ccList))))))
+           (cand (caddr ccList)))
+      (concat cand " " (make-cand (cdr (cddr ccList)))))))
 
 (defun make-cands (cands)
   (if (null cands)
