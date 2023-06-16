@@ -1,0 +1,154 @@
+./examples/Sample/01_HelloWorld.sb
+
+TextWindow.WriteLine("Hello World")
+
+Parsing...
+
+State 0
+Token ID
+Stack S0 : STACK END
+Shift 6
+TextWindow at (1, 1): ID
+
+State 6
+Token .
+Stack S6 : ID i.e. TextWindow : S0 : STACK END
+Shift 30
+. at (1, 11): .
+
+State 30
+Token ID
+Stack S30 : . : S6 : ID i.e. TextWindow : S0 : STACK END
+Shift 58
+WriteLine at (1, 12): ID
+
+State 58
+Token (
+Stack S58 : ID i.e. WriteLine : S30 : . : S6 : ID i.e. TextWindow : S0 : STACK END
+Shift 83
+( at (1, 21): (
+
+State 83
+Token STR
+Stack S83 : ( : S58 : ID i.e. WriteLine : S30 : . : S6 : ID i.e. TextWindow : S0 : STACK END
+Shift 26
+"Hello World" at (1, 22): STR
+
+State 26
+Token )
+Stack S26 : STR i.e. "Hello World" : S83 : ( : S58 : ID i.e. WriteLine : S30 : . : S6 : ID i.e. TextWindow : S0 : STACK END
+Reduce 53
+	Primary -> STR
+
+State 21
+Token )
+Stack S21 : Primary : S83 : ( : S58 : ID i.e. WriteLine : S30 : . : S6 : ID i.e. TextWindow : S0 : STACK END
+Reduce 51
+	UnaryExpr -> Primary
+
+State 20
+Token )
+Stack S20 : UnaryExpr : S83 : ( : S58 : ID i.e. WriteLine : S30 : . : S6 : ID i.e. TextWindow : S0 : STACK END
+Reduce 49
+	MultiplicativeExpr -> UnaryExpr
+
+State 19
+Token )
+Stack S19 : MultiplicativeExpr : S83 : ( : S58 : ID i.e. WriteLine : S30 : . : S6 : ID i.e. TextWindow : S0 : STACK END
+Reduce 46
+	AdditiveExpr -> MultiplicativeExpr
+
+State 18
+Token )
+Stack S18 : AdditiveExpr : S83 : ( : S58 : ID i.e. WriteLine : S30 : . : S6 : ID i.e. TextWindow : S0 : STACK END
+Reduce 43
+	CompExpr -> AdditiveExpr
+
+State 17
+Token )
+Stack S17 : CompExpr : S83 : ( : S58 : ID i.e. WriteLine : S30 : . : S6 : ID i.e. TextWindow : S0 : STACK END
+Reduce 38
+	EqNeqExpr -> CompExpr
+
+State 16
+Token )
+Stack S16 : EqNeqExpr : S83 : ( : S58 : ID i.e. WriteLine : S30 : . : S6 : ID i.e. TextWindow : S0 : STACK END
+Reduce 35
+	AndExpr -> EqNeqExpr
+
+State 15
+Token )
+Stack S15 : AndExpr : S83 : ( : S58 : ID i.e. WriteLine : S30 : . : S6 : ID i.e. TextWindow : S0 : STACK END
+Reduce 33
+	OrExpr -> AndExpr
+
+State 14
+Token )
+Stack S14 : OrExpr : S83 : ( : S58 : ID i.e. WriteLine : S30 : . : S6 : ID i.e. TextWindow : S0 : STACK END
+Reduce 31
+	CondExpr -> OrExpr
+
+State 13
+Token )
+Stack S13 : CondExpr : S83 : ( : S58 : ID i.e. WriteLine : S30 : . : S6 : ID i.e. TextWindow : S0 : STACK END
+Reduce 26
+	Expr -> CondExpr
+
+State 91
+Token )
+Stack S91 : Expr : S83 : ( : S58 : ID i.e. WriteLine : S30 : . : S6 : ID i.e. TextWindow : S0 : STACK END
+Reduce 29
+	MoreThanOneExpr -> Expr
+
+State 93
+Token )
+Stack S93 : MoreThanOneExpr : S83 : ( : S58 : ID i.e. WriteLine : S30 : . : S6 : ID i.e. TextWindow : S0 : STACK END
+Reduce 28
+	Exprs -> MoreThanOneExpr
+
+State 92
+Token )
+Stack S92 : Exprs : S83 : ( : S58 : ID i.e. WriteLine : S30 : . : S6 : ID i.e. TextWindow : S0 : STACK END
+Shift 104
+) at (1, 35): )
+
+Saving: S104 : ) : S92 : Exprs : S83 : ( : S58 : ID i.e. WriteLine : S30 : . : S6 : ID i.e. TextWindow : S0 : STACK END
+
+State 104
+Token $
+Stack S104 : ) : S92 : Exprs : S83 : ( : S58 : ID i.e. WriteLine : S30 : . : S6 : ID i.e. TextWindow : S0 : STACK END
+Reduce 16
+	ExprStatement -> ID . ID ( Exprs )
+
+State 4
+Token $
+Stack S4 : ExprStatement : S0 : STACK END
+Reduce 2
+	Stmt -> ExprStatement
+
+State 3
+Token $
+Stack S3 : Stmt : S0 : STACK END
+Reduce 22
+	MoreThanOneStmt -> Stmt
+
+State 2
+Token $
+Stack S2 : MoreThanOneStmt : S0 : STACK END
+Reduce 1
+	Prog -> MoreThanOneStmt
+
+State 1
+Token $
+Stack S1 : Prog : S0 : STACK END
+Accept
+$ at (1, 36): $
+parse time:   0.00s
+0 Terminal ID Terminal . Terminal ID Terminal ( Nonterminal Exprs Terminal ) 1
+6 Terminal . Terminal ID Terminal ( Nonterminal Exprs Terminal ) 1
+30 Terminal ID Terminal ( Nonterminal Exprs Terminal ) 1
+58 Terminal ( Nonterminal Exprs Terminal ) 1
+83 Terminal STR 1
+92 Terminal ) 1
+
+
