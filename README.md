@@ -9,7 +9,7 @@
 
 ### Syntax completion
  - Learning sets of SmallBasic programs : smallbasic-programs.zip (https://github.com/kwanghoon/SmallBasicDataCollection/tree/main/smallbasic-programs)
- - Test sets of SmallBasic programs : 01_HelloWorld.sb ~ 27_FlickrRepeat.sb (in https://github.com/kwanghoon/MySmallBasic/MySmallBasic/Sample)
+ - Test sets of SmallBasic programs : 01_HelloWorld.sb ~ 27_FlickrRepeat.sb (in https://github.com/kwanghoon/MySmallBasic/tree/master/MySmallBasic/Sample)
  - Candidate database : smallbasic-syntax-completion-candidates-results.txt
  - Analysis result on tutorial programs : smallbasic_tutorial_analysis_results.txt
 
