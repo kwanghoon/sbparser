@@ -1,6 +1,6 @@
 # sbparser
 
-## For supplementary materials for submission to SLE 2023 
+## Supplementary materials for submission to SAC 2024
 
 ### Small Basic grammar and automaton
  - production rules : prod_rules.txt
