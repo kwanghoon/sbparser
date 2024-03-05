@@ -25,8 +25,8 @@ import SyntaxCompletionSpec(spec)
 main :: IO ()
 main = do
   args <- getArgs
-  putStrLn "args:"
-  mapM_ putStrLn args
+  -- putStrLn "args:"
+  -- mapM_ putStrLn args
   if "test" `elem` args
     then withArgs [] spec
     else if "emacs" `elem` args
@@ -37,12 +37,13 @@ main = do
 
 _main [] = return ()
 _main (fileName:args) = 
-   do _ <- doProcess True fileName
+   do _ <- doProcess False fileName
       _main args
 
 doProcess verbose fileName = do
+  when (verbose) $ putStrLn fileName
   text <- readFile fileName
-  -- when (verbose) $ putStrLn "Lexing..."
+  when (verbose) $ putStrLn "Lexing..."
   -- (_,_,terminalList) <- lexingWithLineColumn lexerSpec 1 1 text
   -- when (verbose) $ mapM_ putStrLn $ map terminalToString terminalList
   when (verbose) $ putStrLn "Parsing..."
