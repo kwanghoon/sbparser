@@ -1,7 +1,7 @@
 # sbparser
 
 ## Supplementary materials for submission to SAC 2024
- - Commit: #692779c1f9d3c96bf7f5d1f9beecbf04e5bbef3c
+ - [Commit No. 692779c ](https://github.com/kwanghoon/sbparser/commit/692779c1f9d3c96bf7f5d1f9beecbf04e5bbef3c)
 
 ### Small Basic grammar and automaton
  - production rules : prod_rules.txt
